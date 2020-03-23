@@ -42,13 +42,14 @@ p, h2, h3, h4 {
 }
 
 .logo {
-  position: absolute;
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
-  background-image: url(../images/logo.svg);
-  top: 30px;
+  position: absolute;
   left: 64px;
+  top: 30px;
   width: 183px;
   height: 32px;
 }
@@ -75,6 +76,10 @@ p, h2, h3, h4 {
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+}
+
+.header__link:hover {
+  color: white;
 }
 
 .header__main-illustration {
@@ -113,6 +118,7 @@ p, h2, h3, h4 {
   line-height: 1.2;
   font-size: 18px;
   color: #2f80ed;
+  font-weight: 400;
 }
 
 .two-columns__main-text {
@@ -123,16 +129,16 @@ p, h2, h3, h4 {
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
   font-weight: 700;
-}
-
-/* Модификатор для отступа среднего параграфа */
-
-.two-columns__paragraph_central {
-  margin: 30px 0 30px 0;
 }
 
 .digits {
@@ -155,6 +161,7 @@ p, h2, h3, h4 {
   font-size: 24px;
   width: 60%;
   text-align: center;
+  font-weight: 400;
 }
 
 .table {
@@ -189,7 +196,7 @@ p, h2, h3, h4 {
   align-items: center;
   text-align: center;
   background-color: #f2f2f2;
-  background-image: url(../images/feinman.png);
+  background-image: url(/images/feinman.png);
   background-repeat: no-repeat;
   background-size: 867px 637px;
   background-position: bottom left;
@@ -208,6 +215,7 @@ p, h2, h3, h4 {
 .feinman__subtitle {
   line-height: 51px;
   font-size: 36px;
+  font-weight: 400;
   margin: 70px 0 0;
 }
 
@@ -217,8 +225,13 @@ p, h2, h3, h4 {
   color: #000000;
   line-height: 51px;
   font-size: 36px;
+  font-weight: 400;
   top: 50%;
   right: 48px;
+}
+
+.feinman__link:hover {
+  color: #2f80ed;
 }
 
 .kaufman {
@@ -232,8 +245,6 @@ p, h2, h3, h4 {
   position: relative;
 }
 
-/* В первой таблице идентичные данные для тайтла и сабтайтла, поэтому не могу понять, зачем тут модификаторы от темной таблицы */
-
 .section-title_theme_dark {
   line-height: 69px;
   font-size: 60px;
@@ -243,8 +254,6 @@ p, h2, h3, h4 {
   line-height: 34px;
   font-size: 24px;
 }
-
-/* В CSS по БЭМ стили, отвечающие за внешнюю геометрию и позиционирование, задаются через родительский блок. - с сайта БЭМ, тут запутался и не знаю, правильно ли прописал */
 
 .digits__section-subtitle {
   margin: 20px 0 0;
@@ -273,8 +282,6 @@ p, h2, h3, h4 {
   line-height: 1.2;
   font-size: 18px;
 }
-
-/* Пытался разместить треугольник через div и указать путь в CSS, раз это декоративное изображение, но он либо не отображался, либо распологался неправильно :( */
 
 .kaufman__triangle {
   position: absolute;
@@ -305,10 +312,12 @@ p, h2, h3, h4 {
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   flex-basis: 711px;
 }
 
-/* Не могу понять, какие правила нужны в этих модификаторах:( */
 .footer__column_content_info {
 
 }
@@ -318,9 +327,7 @@ p, h2, h3, h4 {
 }
 
 .footer__author {
-  position: absolute;
-  bottom: 18px;
-  margin: 18px 0 0;
+  margin: 18px 0 18px;
 }
 
 .footer__column-heading {
@@ -343,16 +350,19 @@ p, h2, h3, h4 {
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #2f80ed;
+}
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   position: relative;
-  top: 2px;
 }
 
 .logo_place_footer {
-  background-image: url(../images/logo_white.svg);
+  background-image: url(/images/logo_white.svg);
   width: 183px;
   height: 35px;
 }
