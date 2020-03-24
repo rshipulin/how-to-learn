@@ -42,7 +42,7 @@ p, h2, h3, h4 {
 }
 
 .logo {
-  background-image: url(/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
 }
 
@@ -196,7 +196,7 @@ p, h2, h3, h4 {
   align-items: center;
   text-align: center;
   background-color: #f2f2f2;
-  background-image: url(/images/feinman.png);
+  background-image: url(../images/feinman.png);
   background-repeat: no-repeat;
   background-size: 867px 637px;
   background-position: bottom left;
@@ -362,7 +362,7 @@ p, h2, h3, h4 {
 }
 
 .logo_place_footer {
-  background-image: url(/images/logo_white.svg);
+  background-image: url(../images/logo_white.svg);
   width: 183px;
   height: 35px;
 }
