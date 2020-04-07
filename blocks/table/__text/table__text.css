@@ -1,0 +1,7 @@
+@import url(../__text/_theme/table__text_theme_dark.css);
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  margin: 20px 0 0;
+}

@@ -1,0 +1,4 @@
+@import url(../__cell/_theme/table__cell_theme_light.css);
+@import url(../__cell/_theme/table__cell_theme_dark.css);
+
+/* сделал два модификатора, так как пересекается высота у ячеек */
