@@ -1,11 +1,11 @@
-@import url(../video/__iframe/video__iframe.css);
-@import url(../video/__iframes/video__iframes.css);
-@import url(../video/__section-subtitle/video__section-subtitle.css);
+@import url(./__iframe/video__iframe.css);
+@import url(./__iframes/video__iframes.css);
+@import url(./__section-subtitle/video__section-subtitle.css);
+@import url(./__iframe-youtube/video__iframe-youtube.css);
 
 .video {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
-  margin-bottom: -40px;
 }

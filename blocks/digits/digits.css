@@ -1,4 +1,4 @@
-@import url(../digits/__section-subtitle/digits__section-subtitle.css);
+@import url(./__section-subtitle/digits__section-subtitle.css);
 
 .digits {
   display: flex;
