@@ -1,4 +1,4 @@
-@import url(../technics/__section-subtitle/technics__section-subtitle.css);
+@import url(./__section-subtitle/technics__section-subtitle.css);
 
 .technics {
   display: flex;
